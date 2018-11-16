@@ -1,0 +1,19 @@
+.reveal table th, .reveal table td {
+    text-align: center;
+    border: 1px solid white;
+}
+
+.reveal pre {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+}
+
+/* .reveal p { */
+/*     text-align: left; */
+/* } */
+
+
+.reveal ol, .reveal ul, .reveal dl {
+    text-align: left;
+}

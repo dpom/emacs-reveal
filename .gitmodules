@@ -1,0 +1,12 @@
+[submodule "reveal.js"]
+	path = reveal.js
+	url = git@github.com:hakimel/reveal.js.git
+[submodule "MathJaxt"]
+	path = MathJaxt
+	url = git@github.com:mathjax/MathJax.git
+[submodule "plugins/toolbar"]
+	path = plugins/toolbar
+	url = https://github.com/denehyg/reveal.js-toolbar
+[submodule "plugins/menu"]
+	path = plugins/menu
+	url = https://github.com/denehyg/reveal.js-menu
