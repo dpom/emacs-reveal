@@ -1,2 +1,37 @@
 # emacs-reveal
 Template for org-reveal presentations
+
+
+
+* Spacemacs config
+
+In =init.el= add org layer:
+#+BEGIN_SRC emacs-lisp
+(org :variables
+     org-enable-reveal-js-support t)
+#+END_SRC
+
+In the custom layer (myorg):
+#+BEGIN_SRC emacs-lisp
+(defun myorg/post-init-ox-reveal ()
+  "Initialize ox-reveal package."
+  (use-package ox-reveal
+    :config (progn
+              (setq org-reveal-external-plugins  '((menu . "{ src: './plugins/menu/menu.js', async: true}")
+                                                   (toolbar . "{ src: './plugins/toolbar/toolbar.js', async: true}")))
+              )))
+#+END_SRC
+
+* Usage
+
+  1. Clone this project.
+     #+BEGIN_SRC shell
+     git clone git@github.com:dpom/emacs-reveal.git .
+     #+END_SRC
+  2. Sync submodules:
+     #+BEGIN_SRC shell
+     git submodule sync --recursive
+     git submodule update --init --recursive
+     #+END_SRC
+  3. Rename Template.org and edit your presentation.
+  4. Use spacemacs commands to create the presentation (,eeRR)
