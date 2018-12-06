@@ -10,3 +10,6 @@
 [submodule "plugins/menu"]
 	path = plugins/menu
 	url = https://github.com/denehyg/reveal.js-menu
+[submodule "plugins/jump"]
+	path = plugins/jump
+	url = https://github.com/SethosII/reveal.js-jump-plugin.git
