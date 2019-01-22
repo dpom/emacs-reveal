@@ -17,3 +17,12 @@
 .reveal ol, .reveal ul, .reveal dl {
     text-align: left;
 }
+
+.multicol {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    border: 10px solid transparent;
+}
