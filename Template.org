@@ -5,6 +5,9 @@
 #+EMAIL: 
 #+STARTUP: overview
 
+* Table of Contents :TOC:noexport:
+- [[#section-1][Section 1]]
+
 * Section 1
 
 
@@ -20,18 +23,20 @@
 
 ** Reveal
 
-   #+OPTIONS: reveal_title_slide:"<h1>%t</h1><h2>A&nbspShort&nbspIntroduction</h2><h3>%a</h3>"
    #+OPTIONS: reveal_center:t reveal_progress:t reveal_history:t reveal_control:t
    #+OPTIONS: reveal_mathjax:t reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:t
    #+OPTIONS: reveal_width:1200 reveal_height:800
+   #+OPTIONS: reveal_slide_number:c
+
+   #+REVEAL_TITLE_SLIDE:<h1>%t</h1><h2>%s</h2>
    #+REVEAL_MARGIN: 0.2
    #+REVEAL_MIN_SCALE: 0.5
    #+REVEAL_MAX_SCALE: 2.5
-   #+REVEAL_THEME: moon
-   #+REVEAL_TRANS: cube
+   #+REVEAL_THEME: solarized
+   #+REVEAL_TRANS: slide
    #+REVEAL_EXTRA_CSS: ./css/dpom.css
-   #+REVEAL_HLEVEL: 2
-   #+REVEAL_PLUGINS: (highlight menu notes toolbar)
+   #+REVEAL_HLEVEL: 5
+   #+REVEAL_PLUGINS: (highlight menu)
    #+REVEAL_INIT_SCRIPT: menu:{themes: true, transitions: true, markers:true},
    #+REVEAL_INIT_SCRIPT: toolbar: {fullscreen: true, pause: true, notes: true,},
    
@@ -39,13 +44,17 @@
 
    #+LATEX_CLASS: dpom-spec
    #+LATEX_HEADER: \usepackage[hmargin=2cm,top=4cm,headheight=65pt,footskip=65pt]{geometry}
+   #+LATEX_HEADER: \usepackage{svg}
+   #+LATEX_HEADER: \usepackage{titletoc}
    #+LaTeX_HEADER: \newcommand{\docVersion}{1.0}
-   #+LaTeX_HEADER: \newcommand{\docTitle}{DevOps}
-   #+LaTeX_HEADER: \newcommand{\docSubTitle}{DevOps Basics}
+   #+LaTeX_HEADER: \newcommand{\docTitle}{Template}
+   #+LaTeX_HEADER: \newcommand{\docSubTitle}{Presentation Template}
    #+LaTeX_HEADER: \fancyhead[CE,CO,LE,LO,RE,RO]{} %% clear out all headers
    #+LaTeX_HEADER: \rfoot{} %% get rid of the page number
    #+LaTeX_HEADER: \fancyhead[C]{\begin{tabular}{|m{3.0cm}|m{10.0cm}|m{2.5cm}|} \hline \includegraphics[height=1.5cm,width=2.5cm]{img/Luxoft_logo.png} & \centering \Large{\docTitle{} - \docSubTitle{}} & \centering \tiny{\ Data: {\today}\ Rev. \docVersion}\tabularnewline \hline \end{tabular}}
-   #+LaTeX_HEADER: \fancyfoot[C]{\begin{tabular}{|m{3.0cm}|m{10.0cm}|m{2.5cm}|} \hline  & \centering \small{eMAG IT Research} & \centering \small{Page \thepage\ of \pageref{LastPage}}\tabularnewline \hline \end{tabular}}
+   #+LaTeX_HEADER: \fancyfoot[C]{\begin{tabular}{|m{3.0cm}|m{10.0cm}|m{2.5cm}|} \hline  &  & \centering \small{Page \thepage\ of \pageref{LastPage}}\tabularnewline \hline \end{tabular}}
    #+LATEX_HEADER: \input{mytitle}
-   #+latex_header: \usepackage[style=alphabetic,hyperref=true,backref=true,maxcitenames=3,url=true,backend=bibtex,natbib=false]{biblatex}
-   #+latex_header: \addbibresource{~/pers/bibliography/dpom.bib}
+   #+LATEX_HEADER: \usepackage[style=alphabetic,hyperref=true,backref=true,maxcitenames=3,url=true,backend=bibtex,natbib=false]{biblatex}
+   #+LATEX_HEADER: \addbibresource{~/pers/resources/dpom.bib}
+   #+LATEX_HEADER: \newenvironment{multicol}{}{\ignorespacesafterend}
+   #+LATEX_HEADER: \newenvironment{col}{}{\ignorespacesafterend}
