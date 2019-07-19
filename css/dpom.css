@@ -10,9 +10,9 @@
     box-shadow: none;
 }
 
-/* .reveal p { */
-/*     text-align: left; */
-/* } */
+.reveal p {
+    text-align: left;
+}
 
 
 .reveal ol, .reveal ul, .reveal dl {
